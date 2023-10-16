@@ -1,0 +1,131 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{%static 'styles.css'%}">
+</head>
+<body>
+    <div class="nav">
+        <div class="link">
+            <a href="#home" >Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        </div>
+        
+
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+          </div> 
+        
+    </div>
+    <div class="home" id="home">
+        <h1>Hi <br>I am <span style="color: yellow;">Thomas</span><br>Software Developer</h1>
+        <img src="{%static 'tom.png'%}" alt="">
+    </div>
+    <div class="about" id="about">
+        <h1>About me</h1>
+        <p>Hi, I am Thomas Mumo. <br>I am a junior software developer based in Nairobi, Kenya. My passion for software development started when i joined <br>
+            KCA University for a bachelors' degree in Software development<br> four years ago and i haven't looked back since. I am proud to say i have 
+            
+            completed all<br> my school projects and some personal projects for practice. Currently I am specializing in full-stack web development<br> using 
+            python django and  front-end technologies like Javascript.
+        </p>
+    </div>
+    <div class="skills" id="skills">
+        <center><h1>My Skills</h1></center>
+        <div class="boxes">
+            <div class="box">
+                <img src="{%static 'python.png'%}" alt="">
+                <h4>Python</h4>
+                <p>Skill level : 8/10<br>Framework: Django</p>
+            </div>
+            <div class="box">
+                <img src="{%static 'js.png'%}" alt="">
+                <h4>JavaScript</h4>
+                <p>Skill level : 5/10</p>
+
+            </div>
+            <div class="box">
+                <img src="{%static 'html.png'%}" alt="">
+                <h4>HTML</h4>
+                <p>Skill level : 7/10</p>
+
+            </div>
+            <div class="box">
+                <img src="{%static 'css.png'%}" alt="">
+                <h4>CSS</h4>
+                <p>Skill level : 7/10</p>
+
+            </div>
+            <div class="box">
+                <img src="{%static 'sql.webp'%}" alt="">
+                <h4>SQL</h4>
+                <p>Skill level : 7/10</p>
+
+            </div>
+            <div class="box">
+                <img src="{%static 'git.png'%}" alt="">
+                <h4>GIT</h4>
+                <p>Skill level : 5/10</p>
+
+            </div>
+            <div class="box">
+                <img src="{%static 'bootstrap.jfif'%}" alt="">
+                <h4>Bootstrap</h4>
+                <p>Skill level : 8/10</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <center><h1>Projects</h1></center>
+        <div class="projectboxes">
+            <div class="box">
+                <img src="{%static 'fail.png'%}" alt="">
+                <h4>Fail predictor</h4>
+                <p>Designed and implemented a classification model
+                    to predict students who are likely to fail in their final exam.
+                    based on CATs. Used python (django), HTML,CSS and Sklearn.
+                </p>
+            </div>
+            <div class="box">
+                <img src="{%static 'ticket.jfif'%}" alt="">
+                <h4>Ticketing system</h4>
+                <p>Designed and implemented a helpdesk system for the state department of labour. It made it easier for employees to request for 
+                    IT support through tickets. Used PHP, SQL, HTML,CSS and JavaScript.
+                </p>
+
+            </div>
+            <div class="box">
+                <img src="{%static 'rent.png'%}" alt="">
+                <h4>JFLATS</h4>
+                <p>Designed and implemented a rental system as my final year project. It Automated house booking and rent payment via M-pesa.
+                    Used python(django), HTML, CSS, bootsrap and JavaScript
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <center><h1>Contact</h1></center>
+        <h4>Phone; +254 111 330 150</h4>
+        <a href="mailto:tmumo0420@gmail.com">Send Email <i class="fa fa-envelope" style="font-size:20px;color:red"></i></a>
+        
+    </div>
+</body>
+</html>

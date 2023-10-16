@@ -1,0 +1,239 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0%;
+    background-color: black;
+}
+.nav{
+    background-color: black;
+    height: 5vh;
+    
+    padding: 5px;
+    padding-left: 9vw;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+
+    
+}
+.nav a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 0;
+    
+    
+    
+}
+.nav a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    transition: .5s ease-in-out;
+    text-decoration-thickness: 5px;
+}
+.home{
+    height: 101vh;
+    background-color: rgb(41, 40, 40);
+  
+    width: 100vw;
+    
+}
+.home img{
+    position: absolute;
+    bottom: -25px;
+    right: 130px;
+    height: 98vh;
+
+}
+.home h1{
+    color: white;
+    position: absolute;
+    bottom: 30vh;
+    left: 30vw;
+    font-size: 50px;
+}
+.about{
+    background-color: black;
+    width: 100vw;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.skills{
+    padding: 110px;
+    color: white;
+}
+.boxes{
+    display: flex;
+}
+.boxes .box{
+    width: 20vw;
+    min-height: 40vh;
+    margin: 5px;
+    border: 1px solid yellow;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+.boxes .box p{
+    display: none;
+}
+.boxes .box:hover{
+    box-shadow: 0 5px 15px white;
+
+}
+.boxes .box:hover p{
+    display: block;
+    box-shadow: 0 5px 15px yellow;
+    border-radius: 5px;
+}
+.boxes .box img{
+    width:80%;
+    height: 50%;
+    border-radius: 50%;
+    
+}
+.projects{
+    color: white;
+    padding: 120px;
+}
+
+.projectboxes{
+    display: flex;
+}
+.projectboxes .box{
+    height: 40vh;
+    border-radius: 5px;
+    width: 30vw;
+    margin: 5px;
+    text-align: center;
+    border: .1px solid yellow;
+    padding: 10px;
+}
+.projectboxes .box img{
+    height: 55%;
+    width: 60%;
+    border-radius: 5px;
+}
+.contact{
+    text-align: center;
+    padding: 120px;
+    color: white;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+.contact a:hover{
+    text-decoration: underline;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown .dropbtn{
+    display: none;
+  }
+@media screen and (max-width: 600px) {
+    .home img{
+        position: absolute;
+        bottom: 40vh;
+        right:0px;
+        height: 50vh;
+        width: 70%;
+    
+    }
+    .home h1{
+        color: white;
+        position: absolute;
+        bottom: 60vh;
+        left: 1vw;
+        font-size: 20px;
+    }
+    .home{
+        height: 60vh;
+        background-color: rgb(41, 40, 40);
+      
+        width: 100vw;
+        
+    }
+    .about{
+        
+        width: 90vw;
+        
+    }
+    .boxes{
+        display: block;
+    }
+    .boxes .box{
+        width: 80vw;
+        
+    }
+    .skills{
+        padding: 5px;
+    }
+    .projects{
+        
+        padding: 5px;
+    }
+    .projectboxes{
+        display: block;
+    }
+    .projectboxes .box{
+        height: 55vh;
+        width: 80vw;
+   
+    }
+   
+    .dropdown .dropbtn{
+        display: block;
+        float: right;
+      }
+      .link{
+        display: none;
+      }
+    
+  }
